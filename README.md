@@ -100,7 +100,7 @@ int[] mystery(int[] nums, int n) {
 ```
 
 1. Consider the `mystery` method in the `ArrayExamples` class. Write a comment above this method describing what it does in a *single* English sentence.
-2. Write a test for `mystery` which calls it with an input **other than** `null` for `nums` which causes an exception when run. You can write this test as a field in `ArrayExamples` or as a tester method, your choice, but it must be clearly indicated as the tests for Task 2 part 2.
+2. Write a test for `mystery` which calls it with an input **other than** `null` for `nums` which causes an exception when run. Write this test as a field named `taskTwoTest` in `ArrayExamples`.
 3. Change the `mystery` method so that instead of causing this exception, the program instead returns an empty array for that input and other inputs like it. Note that you must _modify_ this method, not write a new method.
 
 ### Task 3
