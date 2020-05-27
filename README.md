@@ -26,7 +26,7 @@ Submission checklist (see long descriptions below for full details):
 - `[ ]` `findNth` method in the `ArrayExamples` class
 - `[ ]` A comment describing the `mystery` method in `ArrayExamples`
 - `[ ]` A test for the `mystery` method in `ArrayExamples` that threw an exception in the original implementation of that method
-- `[ ]` Modified the `mystery` method to not throw the exception from the test above
+- `[ ]` Modified the `mystery` method to not throw exceptions
 - `[ ]` `AllQuery` class
 - `[ ]` Constructed three instances of `AllQuery` with specified array lengths
 - `[ ]` Six tests using these constructed `AllQuery` objects
@@ -59,7 +59,7 @@ You should **not** change any of the existing methods or classes except for the 
    - the string input `"b"`, it should produce -1.
    - the string input `"c"`, it should produce -1.
 
-2. Add another *method* to the `ArrayExamples` class called `findNth` that takes a `String[]`, a `String`, and an `int` `n`. It should behave the same as `findSecond`, but look for the _index of the `n`th time_ the string appears in the array. For example, for the array input `{"a", "b", "a", "a"}`
+2. Add another method to the `ArrayExamples` class called `findNth` that takes a `String[]`, a `String`, and an `int` `n`. It should behave the same as `findSecond`, but look for the _index of the `n`th time_ the string appears in the array. For example, for the array input `{"a", "b", "a", "a"}`
 
    - the string input `"a"`, and int `2`, it should produce 2.
    - the string input `"a"`, and int `3`, it should produce 3.
@@ -74,13 +74,14 @@ You can assume that all inputs to both of these methods are not `null`, and `n` 
 <!-- TODO Put this code in the ArrayExamples class? -->
 Consider the following methods in the `ArrayExamples` class:
 
-```
+```java
 int find(int[] nums, int n) {
   for(int i = 0; i < nums.length; i += 1) {
     if(nums[i] == n) { return i; }
   }
   return -1;
 }
+
 int[] mystery(int[] nums, int n) {
   int index = find(nums, n);
   int[] result = new int[index];
@@ -97,7 +98,7 @@ int[] mystery(int[] nums, int n) {
 
 ### Task 3
 
-In the file `ExamplesSearch.java`, add a new class called `AllQuery` implementing `ImageQuery`. It should have a field of type `ImageQuery[]` and a corresponding constructor to initialize that field. Its `matches` method should return true when _all_ of the queries in the list match the given image. If the query array is empty, `matches` should always return `true`.
+In the file `ExamplesSearch.java`, add a new class called `AllQuery` implementing `ImageQuery`. It should have a field of type `ImageQuery[]` and a corresponding constructor to initialize that field. Its `matches` method should return true when _all_ of the queries in the list match the given image. If the query array is empty, `matches` should return `true` on all inputs.
 
 Create at least three `AllQuery`s with arrays of size 0, 3 and 5, each containing different queries. Demonstrate using each query's `matches` method on at least two different `ImageData` inputs, once returning `true` and once returning `false`. So at least 6 tests in total.
 
