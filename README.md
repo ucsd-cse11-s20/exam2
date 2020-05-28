@@ -18,7 +18,7 @@ so on to complete the exam.
 
 You will complete the programming tasks 1 and 2 in the file `ArrayExamples.java` in the `ArrayExamples` class. Task 3 should be implemented by adding to the file `ExamplesSearch.java`. You should submit both files `ArrayExamples.java` and `ExamplesSearch.java` to the `exam2` Gradescope assignment.
 
-You will also submit a **video screencast** of yourself presenting a portion of it to this [TODO]().
+You will also submit a **video screencast** of yourself presenting a portion of it to this [Google Form](https://forms.gle/rqVp7JGDP1gt5TxH6).
 
 Submission checklist (see long descriptions below for full details):
 
