@@ -46,7 +46,7 @@ Download this starter code:
 
 [https://github.com/ucsd-cse11-s20/exam2](https://github.com/ucsd-cse11-s20/exam2)
 
-<!-- (TODO Is it adapted from anything?) -->
+(The `ExamplesSearch` class is very lightly adapted from [this reading](https://cseweb.ucsd.edu/classes/sp17/cse11-a/lecture11.html))
 
 You should **not** change any of the existing methods or classes except for the `mystery` method, and adding to `ArrayExamples` and `ExamplesSearch`. Don't change `ImageQuery` or the other query classes, just add new ones as described below.
 
@@ -71,36 +71,15 @@ You can assume that all inputs to both of these methods are not `null`, and `n` 
 
 ### Task 2
 
-<!-- TODO Put this code in the ArrayExamples class? -->
-Consider the following methods in the `ArrayExamples` class:
-
-```java
-int find(int[] nums, int n) {
-  for(int i = 0; i < nums.length; i += 1) {
-    if(nums[i] == n) { return i; }
-  }
-  return -1;
-}
-
-int[] mystery(int[] nums, int n) {
-  int index = find(nums, n);
-  int[] result = new int[index];
-  for(int i = 0; i < index; i += 1) {
-    result[i] = nums[i];
-  }
-  return result;
-}
-```
-
 1. Consider the `mystery` method in the `ArrayExamples` class. Write a comment above this method describing what it does in a *single* English sentence.
 2. Write a test for `mystery` which calls it with an input **other than** `null` for `nums` which causes an exception when run. Write this test as a field named `taskTwoTest` in `ArrayExamples`.
-3. Change the `mystery` method so that **no inputs** can cause an exception to be thrown, and the method instead returns an empty array for those inputs. Note that you must _modify_ this method, not write a new method.
+3. Change the `mystery` method so that **no inputs** can cause an exception to be thrown, and the method instead returns an empty array for those inputs. Note that you must _modify_ this method, not write a new method. You may only use Java constructs we have learned in this class, and you must ensure that mystery's behavior does not change on valid inputs.
 
 ### Task 3
 
-In the file `ExamplesSearch.java`, add a new class called `AllQuery` implementing `ImageQuery`. It should have a field of type `ImageQuery[]` and a corresponding constructor to initialize that field. Its `matches` method should return true when _all_ of the queries in the list match the given image. If the query array is empty, `matches` should return `true` on all inputs.
+1. In the file `ExamplesSearch.java`, add a new class called `AllQuery` implementing `ImageQuery`. It should have a field of type `ImageQuery[]` and a corresponding constructor to initialize that field. Its `matches` method should return true when _all_ of the queries in the list match the given image. If the query array is empty, `matches` should return `true` on all inputs.
 
-Create at least three `AllQuery`s with arrays of size 0, 3 and 5, each containing different queries. Demonstrate using each query's `matches` method on at least two different `ImageData` inputs, once returning `true` and once returning `false`. So at least 6 tests in total.
+2. Create at least three `AllQuery`s with arrays of size 0, 3 and 5, each containing different queries. Demonstrate using each query's `matches` method on at least two different `ImageData` inputs, once returning `true` and once returning `false`. So at least 6 tests in total.
 
 ### Task 4 – Video
 
