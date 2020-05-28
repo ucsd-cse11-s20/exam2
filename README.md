@@ -73,7 +73,7 @@ You can assume that all inputs to both of these methods are not `null`, and `n` 
 
 1. Consider the `mystery` method in the `ArrayExamples` class. Write a comment above this method describing what it does in a *single* English sentence.
 2. Write a test for `mystery` which calls it with an input **other than** `null` for `nums` which causes an exception when run. Write this test as a field named `taskTwoTest` in `ArrayExamples`.
-3. Change the `mystery` method so that **no inputs** can cause an exception to be thrown, and the method instead returns an empty array for those inputs. Note that you must _modify_ this method, not write a new method. You may only use Java constructs we have learned in this class, and you must ensure that mystery's behavior does not change on valid inputs.
+3. Change the `mystery` method so that **no inputs** can cause an exception to be thrown, and the method instead returns an empty array for those invalid inputs. Note that you must _modify_ this method, not write a new method. You may only use Java constructs we have learned in this class, and you must ensure that mystery's behavior does not change on valid inputs.
 
 ### Task 3
 
