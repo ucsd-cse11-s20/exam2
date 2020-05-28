@@ -91,7 +91,7 @@ You will record a short video of no more than 5 minutes. Include:
   to the work itself is what we want.
 - For the `AllQuery` with array of size 3 that you created in [Task 3](#task-3):
 
-  Run the `ExamplesSearch` program and show the output corresponding to a method call for this example. Then, starting from the line in your code with the call to the `matches` method, indicate each line of code that runs in your program while evaluating that method call. You can scoll to and click the lines to highlight them, or otherwise indicate each one. You should indicate them in the other that **Java will evaluate them** (this might be different than the order they appear in the file).
+  Run the `ExamplesSearch` program and show the output corresponding to a method call for this example. Then, starting from the line in your code with the call to the `matches` method, indicate each line of code that runs in your program while evaluating that method call. You can scoll to and click the lines to highlight them, or otherwise indicate each one. You should indicate them in the order that **Java will evaluate them** (this might be different than the order they appear in the file).
 
 An example of what your video should look like when doing this kind of
 explanation is here:
