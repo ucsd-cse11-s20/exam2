@@ -73,13 +73,13 @@ You can assume that all inputs to both of these methods are not `null`, and `n` 
 
 1. Consider the `mystery` method in the `ArrayExamples` class. Write a comment above this method describing what it does in a *single* English sentence.
 2. Write a test for `mystery` which calls it with an input **other than** `null` for `nums` which causes an exception when run. Write this test as a field named `taskTwoTest` in `ArrayExamples`.
-3. Change the `mystery` method so that **no inputs** can cause an exception to be thrown, and the method instead returns an empty array for those invalid inputs. Note that you must _modify_ this method, not write a new method. You may only use Java constructs we have learned in this class, and you must ensure that mystery's behavior does not change on valid inputs.
+3. Change the `mystery` method so that **no inputs** can cause an exception to be thrown, and the method instead returns an empty array for the inputs that caused exceptions on the original version. Note that you must _modify_ this method, not write a new method. You may only use Java constructs we have learned in this class, and you must ensure that mystery's behavior does not change on valid inputs. You can always go back to the web page for the starter code to see the original version if you make edits and want to see the original again.
 
 ### Task 3
 
-1. In the file `ExamplesSearch.java`, add a new class called `AllQuery` implementing `ImageQuery`. It should have a field of type `ImageQuery[]` and a corresponding constructor to initialize that field. Its `matches` method should return true when _all_ of the queries in the list match the given image. If the query array is empty, `matches` should return `true` on all inputs.
+1. In the file `ExamplesSearch.java`, add a new class called `AllQuery` implementing `ImageQuery`. It should have a field of type `ImageQuery[]` and a corresponding constructor to initialize that field. Its `matches` method should return `true` when _all_ of the queries in the list match the given image. If the query array is empty, `matches` should return `true` for any `ImageData`.
 
-2. Create at least three `AllQuery`s with arrays of size 1, 3 and 5, each containing different queries. Demonstrate using each query's `matches` method on at least two different `ImageData` inputs, once returning `true` and once returning `false`. So at least 6 tests in total.
+2. Create three `AllQuery`s with arrays of size 1, 3 and 5, each containing different queries. Demonstrate using each query's `matches` method on at least two different `ImageData` inputs, once returning `true` and once returning `false`. So at least 6 tests in total. (You can and should write _more_ tests than this to ensure that the class works as you expect, but this is what we'll check for).
 
 ### Task 4 – Video
 
