@@ -46,7 +46,7 @@ Download this starter code:
 
 [https://github.com/ucsd-cse11-s20/exam2](https://github.com/ucsd-cse11-s20/exam2)
 
-(The `ExamplesSearch` class is very lightly adapted from [this reading](https://cseweb.ucsd.edu/classes/sp17/cse11-a/lecture11.html))
+(The `ExamplesSearch` class is identical to the start code from Exam 1)
 
 You should **not** change any of the existing methods or classes except for the `mystery` method, and adding to `ArrayExamples` and `ExamplesSearch`. Don't change `ImageQuery` or the other query classes, just add new ones as described below.
 
